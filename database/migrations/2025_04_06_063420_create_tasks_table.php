@@ -14,6 +14,12 @@ return new class extends Migration
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
             $table -> string("task");
+            $table->string('title');
+            $table->text('description')->nullable();
+            $table->enum('status', ['pendiente', 'en progreso', 'completada'])->default('pendiente');
+            $table->date('date_ven')->nullable();
+            $table->boolean('priority')->default(false);
+            $table->enum('category', ['trabajo', 'estudio', 'casa', 'personal', 'finanzas', 'salud', 'viaje', 'social', 'tecnología']);
             $table->timestamps();
         });
     }

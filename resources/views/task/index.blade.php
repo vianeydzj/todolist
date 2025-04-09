@@ -46,7 +46,6 @@
                             <tr>
                                 <th scope="col">Acción</th>
                                 <th scope="col">Nombre de la tarea</th>
-                                <th scope="col">Descripción</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -60,7 +59,6 @@
                                             <input type="submit" class="btn btn-danger" value="(x) Realizada">
                                         </form>
                                     </td>
-                                
                                 <td>{{ $task -> task }}</td>
                             </tr>
                             @endforeach
@@ -71,10 +69,6 @@
                 </div>
                 <div class="card-footer text-muted"></div>
             </div>
-            
-
-            
-        
         </br>
 
 
